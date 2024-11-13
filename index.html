@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado Vigenère</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      margin: 5px;
+      padding: 10px;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cifrado y Descifrado Vigenère</h1>
+
+  <!-- Interfaz de entrada -->
+  <div>
+    <label for="text">Texto: </label>
+    <input type="text" id="text" />
+  </div>
+  <div>
+    <label for="key">Clave: </label>
+    <input type="text" id="key" />
+  </div>
+
+  <div>
+    <button id="encryptBtn">Cifrar</button>
+    <button id="decryptBtn">Descifrar</button>
+  </div>
+
+  <div>
+    <h2>Texto Cifrado: <span id="encryptedText"></span></h2>
+    <h2>Texto Descifrado: <span id="decryptedText"></span></h2>
+  </div>
+
+  <!-- Conexión a la aplicación JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
